@@ -1,0 +1,4 @@
+# Official reference tokenizers, used only by `pnpm run verify` to prove the
+# fast JavaScript path produces identical counts.
+tokenizers==0.22.2
+tiktoken==0.14.0

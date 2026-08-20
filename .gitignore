@@ -1,0 +1,23 @@
+# Patterns are listed without a trailing slash as well, so that a symlink of the
+# same name is ignored too and cannot be committed by accident.
+node_modules
+node_modules/
+
+# Downloaded tokenizer vocabularies and the cached model catalogue.
+# These are large (tens to hundreds of MB) and are re-fetched on demand.
+.cache
+.cache/
+
+# Python virtualenv used only by `pnpm run verify` to run the official
+# reference tokenizers.
+.venv
+.venv/
+
+# Never commit credentials.
+.env
+.env.*
+*.pem
+.aws/
+
+.DS_Store
+.logs/

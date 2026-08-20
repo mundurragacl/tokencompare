@@ -1,0 +1,20 @@
+[
+  { "name": "ascii-simple", "text": "Hello world!" },
+  { "name": "english-prose", "text": "The quick brown fox jumps over the lazy dog. It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness." },
+  { "name": "code-js", "text": "const sum = (xs) => xs.reduce((a, b) => a + b, 0);\nexport default function main({ items = [] } = {}) {\n  if (!items.length) return null;\n  return sum(items) / items.length;\n}\n" },
+  { "name": "code-python", "text": "def fib(n: int) -> int:\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n    return a\n\nif __name__ == '__main__':\n    print([fib(i) for i in range(10)])\n" },
+  { "name": "chinese", "text": "你好世界，今天天气很好。我们正在测试分词器的表现，看看不同的模型会产生多少个词元。" },
+  { "name": "mixed-cjk-latin", "text": "GLM-5.2 和 DeepSeek-V4-Pro 都支持 1M token 的上下文窗口 (context window)。" },
+  { "name": "japanese", "text": "こんにちは世界。トークナイザーのテストをしています。" },
+  { "name": "arabic", "text": "مرحبا بالعالم. نحن نختبر أدوات تقسيم النصوص إلى وحدات لغوية." },
+  { "name": "emoji", "text": "Shipping it 🚀🚀🚀 looks good to me 👍🏽 — celebrate 🎉 with the 👨‍👩‍👧‍👦 family" },
+  { "name": "numbers", "text": "1234567890 3.14159265358979 42 1,000,000 0xDEADBEEF 2026-08-20T13:55:00Z 99.995%" },
+  { "name": "whitespace-heavy", "text": "a\n\n\n    b\t\t\tc\n        \n   d     e        f\n\n" },
+  { "name": "json-payload", "text": "{\"id\":\"msg_01\",\"model\":\"claude-opus-5\",\"usage\":{\"input_tokens\":1024,\"output_tokens\":256},\"content\":[{\"type\":\"text\",\"text\":\"ok\"}]}" },
+  { "name": "urls-and-paths", "text": "See https://openrouter.ai/api/v1/models and ./src/backends/hf.js for details." },
+  { "name": "repeated-tokens", "text": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbb bbbb bbbb the the the the the the" },
+  { "name": "markdown", "text": "# Heading\n\nSome **bold** and _italic_ text with a [link](https://example.com).\n\n- item one\n- item two\n\n```js\nconst x = 1;\n```\n" },
+  { "name": "cyrillic", "text": "Привет мир! Мы тестируем токенизаторы разных моделей." },
+  { "name": "long-word", "text": "Pneumonoultramicroscopicsilicovolcanoconiosis antidisestablishmentarianism" },
+  { "name": "special-token-literals", "text": "a <|endoftext|> b <|im_start|> c [MASK] d <\uff5cbegin\u2581of\u2581sentence\uff5c> e" }
+]

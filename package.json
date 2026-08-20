@@ -1,0 +1,49 @@
+{
+  "name": "tokencompare",
+  "version": "1.0.0",
+  "description": "Compare how the same text tokenizes, and what it costs, across AI models and providers using each vendor's official tokenizer",
+  "type": "module",
+  "bin": {
+    "tokencompare": "./tokenizer.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "tokenizer.js",
+    "src/",
+    "scripts/",
+    "fixtures/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "compare": "node tokenizer.js",
+    "fixtures": "node scripts/build-fixtures.mjs",
+    "codetax": "node scripts/code-tax.mjs",
+    "test": "node --max-old-space-size=4096 scripts/validate.mjs",
+    "verify": "node scripts/verify-official.mjs",
+    "verify:setup": "python3 -m venv .venv && .venv/bin/pip install -q -r scripts/requirements.txt",
+    "audit:bedrock": "node scripts/bedrock-audit.mjs"
+  },
+  "keywords": [
+    "tokenizer",
+    "tokens",
+    "token-count",
+    "llm",
+    "cost",
+    "pricing",
+    "claude",
+    "gpt",
+    "bedrock",
+    "deepseek",
+    "kimi",
+    "glm",
+    "tiktoken",
+    "bpe"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "gpt-tokenizer": "4.0.0"
+  }
+}
